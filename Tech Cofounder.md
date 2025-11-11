@@ -212,7 +212,7 @@ Please submit:
    - Explain key design decisions
    - Discuss trade-offs and alternatives considered
 
-4. **Email Submission** to [investlearn@gmail.com] with:
+4. **Email Submission** to [investlearnco@gmail.com] with:
    - Subject: "Tech Co-Founder Assignment Submission - [Your Name]"
    - Link to GitHub repository
    - Link to deployed version (if applicable)
