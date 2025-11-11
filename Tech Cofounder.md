@@ -292,6 +292,6 @@ We're excited to see what you build!
 
 ---
 
-**Questions?** Email us at [investlearn@gmail.com]
+**Questions?** Email us at [investlearnco@gmail.com]
 
 **Ready to start?** Pick a challenge and dive in!
