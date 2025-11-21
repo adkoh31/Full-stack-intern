@@ -146,6 +146,62 @@ All endpoints use query parameter `?userId={firebaseId}`
 | `/api/v1/spending/recommendations` | GET | Get recommendations | No |
 | `/api/v1/spending/cash-flow-projections` | GET | Get projections | No |
 
+
+### Goals Management
+**Base Path:** `/api/v1/goals`
+
+All endpoints use query parameter `?userId={firebaseId}`
+
+| Endpoint | Method | Description | Auth Required |
+|----------|--------|-------------|--------------|
+| `/api/v1/goals` | POST | Create a new financial goal | No |
+| `/api/v1/goals` | GET | Get all goals for a user | No |
+| `/api/v1/goals/:goalId` | GET | Get a specific goal by ID | No |
+| `/api/v1/goals/:goalId` | PUT | Update a goal | No |
+| `/api/v1/goals/:goalId` | DELETE | Delete a goal | No |
+| `/api/v1/goals/:goalId/progress` | GET | Get goal progress history | No |
+| `/api/v1/goals/simulate-strategy` | POST | Simulate goal allocation strategy with custom budget | No |
+
+**POST /api/v1/goals Request Body:**
+```json
+{
+  "goalName": "Retirement",
+  "goalType": "retirement",
+  "targetAmount": 1000000,
+  "currentAmount": 0,
+  "monthlyContribution": 1000,
+  "investmentHorizon": 20,
+  "targetYear": 2045,
+  "priority": 1,
+  "riskLevel": "medium"
+}
+```
+
+**GET /api/v1/goals Response:**
+```json
+{
+  "data": {
+    "goals": [
+      {
+        "id": "uuid",
+        "goalName": "Retirement",
+        "goalType": "retirement",
+        "targetAmount": "1000000.00",
+        "currentAmount": "50000.00",
+        "monthlyContribution": "1000.00",
+        "investmentHorizon": 20,
+        "progressPercentage": 5.0,
+        "state": "on_track"
+      }
+    ],
+    "summary": {
+      "totalGoals": 3,
+      "activeGoals": 2,
+      "totalTargetAmount": "1500000.00"
+    }
+  }
+}
+```
 ---
 
 ### Health & Status
