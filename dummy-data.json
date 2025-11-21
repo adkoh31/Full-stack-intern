@@ -1,0 +1,152 @@
+{
+  "users": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "display_name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": null,
+      "fuid": "firebase_uid_001",
+      "provider_id": "google"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440001",
+      "display_name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "phone": "+1234567890",
+      "fuid": "firebase_uid_002",
+      "provider_id": "google"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440002",
+      "display_name": "Bob Johnson",
+      "email": "bob.johnson@example.com",
+      "phone": null,
+      "fuid": "firebase_uid_003",
+      "provider_id": "email"
+    }
+  ],
+  "goals": [
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440000",
+      "user_id": "550e8400-e29b-41d4-a716-446655440000",
+      "goal_name": "Retirement Fund",
+      "goal_type": "retirement",
+      "target_amount": "1000000.00",
+      "current_amount": "50000.00",
+      "monthly_contribution": "1000.00",
+      "investment_horizon": 20,
+      "target_year": 2045,
+      "state": "on_track",
+      "priority": 1,
+      "is_active": true,
+      "risk_level": "medium"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440001",
+      "user_id": "550e8400-e29b-41d4-a716-446655440000",
+      "goal_name": "House Down Payment",
+      "goal_type": "house",
+      "target_amount": "50000.00",
+      "current_amount": "10000.00",
+      "monthly_contribution": "500.00",
+      "investment_horizon": 5,
+      "target_year": 2029,
+      "state": "on_track",
+      "priority": 2,
+      "is_active": true,
+      "risk_level": "low"
+    }
+  ],
+  "api_responses": {
+    "get_goals": {
+      "data": {
+        "goals": [
+          {
+            "id": "660e8400-e29b-41d4-a716-446655440000",
+            "goalName": "Retirement Fund",
+            "goalType": "retirement",
+            "targetAmount": "1000000.00",
+            "currentAmount": "50000.00",
+            "monthlyContribution": "1000.00",
+            "investmentHorizon": 20,
+            "targetYear": 2045,
+            "progressPercentage": 5.0,
+            "state": "on_track",
+            "priority": 1,
+            "isActive": true,
+            "riskLevel": "medium"
+          }
+        ],
+        "summary": {
+          "totalGoals": 2,
+          "activeGoals": 2,
+          "totalTargetAmount": "1050000.00",
+          "totalCurrentAmount": "60000.00"
+        }
+      }
+    },
+    "get_assessment": {
+      "data": {
+        "responseGroupId": "990e8400-e29b-41d4-a716-446655440000",
+        "riskProfile": {
+          "riskTolerance": 0.6,
+          "riskCapacity": 0.7,
+          "overallRisk": "MODERATE"
+        },
+        "knowledgeLevel": "INTERMEDIATE",
+        "investmentHorizon": 20,
+        "financialGoal": "retirement",
+        "monthlyIncome": "5000.00",
+        "targetAmount": "1000000.00",
+        "monthlyInvestable": "1000.00"
+      }
+    },
+    "get_recommendation": {
+      "data": {
+        "initialAllocations": {
+          "EQUITIES": 60,
+          "BONDS": 30,
+          "REAL_ESTATE": 5,
+          "CASH": 5
+        },
+        "adjustedAllocations": {
+          "EQUITIES": 65,
+          "BONDS": 25,
+          "REAL_ESTATE": 5,
+          "CASH": 5
+        },
+        "recommendedMetrics": [
+          "historicalReturn",
+          "volatility",
+          "expenseRatio"
+        ]
+      }
+    },
+    "get_spending": {
+      "data": {
+        "monthlySpending": "3000.00",
+        "monthlyIncome": "5000.00",
+        "savingsRate": 0.4,
+        "emergencyFundMonths": 3,
+        "categories": [
+          {
+            "category": "Housing",
+            "amount": "1500.00",
+            "percentage": 50.0
+          },
+          {
+            "category": "Food",
+            "amount": "600.00",
+            "percentage": 20.0
+          },
+          {
+            "category": "Transportation",
+            "amount": "400.00",
+            "percentage": 13.3
+          }
+        ]
+      }
+    }
+  }
+}
+
