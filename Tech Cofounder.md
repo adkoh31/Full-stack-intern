@@ -325,6 +325,65 @@ We've prepared comprehensive documentation to help you understand our system. Al
 - The optional docs are there if you want to understand our patterns, but you're free to design your own approach
 - All documentation is in this repository - just click the links above
 
+---
+
+## AI & Tool Usage Policy
+
+We're building in 2025, and AI tools are part of modern development. We encourage thoughtful use of AI coding assistants (GitHub Copilot, Cursor, ChatGPT, etc.) and other development tools.
+
+### Our Philosophy
+
+**We value technical judgment over manual coding.** As a co-founder, you'll be making architectural decisions, choosing technologies, and solving complex problems. Using AI tools effectively is a skill we value.
+
+### What We're Looking For
+
+1. **Understanding & Verification**
+   - Do you understand the code you submit?
+   - Can you explain your technical decisions?
+   - Have you verified that AI-generated code works correctly?
+   - Can you debug and fix issues independently?
+
+2. **Technical Judgment**
+   - Did you choose the right approach for the problem?
+   - Are your architectural decisions sound?
+   - Can you evaluate trade-offs between different solutions?
+   - Do you understand the implications of your choices?
+
+3. **Quality Over Speed**
+   - Well-designed, maintainable code
+   - Thoughtful system architecture
+   - Clear documentation of decisions
+   - Proper error handling and edge cases
+
+### What We're NOT Looking For
+
+- ❌ Code you don't understand
+- ❌ Solutions copied without verification
+- ❌ AI-generated code that breaks or doesn't work
+- ❌ Lack of understanding of your own implementation
+
+### Optional: Document Your Process
+
+If you used AI tools, please include a brief note in your submission explaining:
+- Which tools you used and why
+- How you verified the code works
+- Key decisions you made vs. what AI suggested
+- Any challenges you encountered and how you solved them
+
+This helps us understand your technical judgment and problem-solving process. We'll evaluate your submission based on the quality of your solution and your ability to explain it.
+
+### Bottom Line
+
+**Use AI tools if they help you build better solutions faster.** Just make sure you:
+- Understand what you're building
+- Can explain your decisions
+- Verify everything works
+- Demonstrate good technical judgment
+
+We're evaluating you as a potential co-founder who can make good technical decisions and build quality systems - not whether you can code everything from scratch.
+
+---
+
 ### Questions?
 Feel free to reach out with questions:
 - Technical questions about our codebase
